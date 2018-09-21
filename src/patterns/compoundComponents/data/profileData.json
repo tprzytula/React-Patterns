@@ -1,0 +1,34 @@
+{
+  "name": "Tomasz Przytuła",
+  "avatar": {
+    "url": "https://avatars2.githubusercontent.com/u/12460870?s=400&u=54ced5340c556a706571404eb62de5837e78a7dc&v=4"
+  },
+  "bio": "Highly motivated JavaScript enthusiast who always aims to be on track with the newest technologies and conventions. Strongly values teamwork to create high quality products. Thrives when helping others.",
+  "skills": {
+    "languages": [
+      "JavaScript"
+    ],
+    "frameworks": [
+      "Node.js",
+      "React",
+      "React Native",
+      "Meteor",
+      "Electron"
+    ]
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "avatar": "./images/linkedin.png",
+      "url": "https://www.linkedin.com/in/tomasz-przytu%C5%82a-939705102/"
+    }, {
+      "name": "GitHub",
+      "avatar": "./images/github.png",
+      "url": "https://github.com/tprzytula"
+    }, {
+      "name": "Twitter",
+      "avatar": "./images/twitter.png",
+      "url": "https://twitter.com/dev_tprzytula"
+    }
+  ]
+}

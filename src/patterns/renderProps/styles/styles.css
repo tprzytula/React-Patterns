@@ -1,0 +1,20 @@
+.todo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-item {
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+.todo-header {
+    text-align: center;
+}
+
+.todo-task {
+    width: 250px;
+    margin: 0 auto !important;
+}

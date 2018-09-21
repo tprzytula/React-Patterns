@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.star {
+    display: inline-block;
+    width: 30px;
+    color: #ffd700;
+}
+
+.control {
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.plus {
+    color: green;
+}
+
+.minus {
+    color: red;
+}
