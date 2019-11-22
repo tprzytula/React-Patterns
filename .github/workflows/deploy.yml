@@ -1,0 +1,48 @@
+name: CI_DEPLOY
+
+on:
+  push:
+    branches:
+      - master
+      - deploy
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        node_version: [12]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          version: ${{ matrix.node_version }}
+
+      - name: yarn install, yarn build
+        run: |
+          yarn install
+          yarn build
+      - name: Deploy build to Remote
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          source: build
+          target: new_build
+      - name: Serve build on Remote
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          script: |
+            docker-compose down
+            rm -rf build
+            mv new_build/build build
+            rm -rf new_build
+            docker-compose up -d --build
+            docker image prune -a -f

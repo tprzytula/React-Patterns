@@ -7,7 +7,7 @@ To start the app simply run ```npm run start```.
 
 Your app should start on ```localhost:3000``` where you can navigate through patterns.
 
-[Live demo](http://tprzytula.me:3000)
+[Live demo](http://react-patterns.tprzytula.me)
 
 #### Patterns
 
