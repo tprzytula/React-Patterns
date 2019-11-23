@@ -6,7 +6,7 @@ import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 
-class Todos extends React.Component {
+class TodoList extends React.Component {
     renderTodoItem = (item, remove) => {
         return (
             <div className="todo-item" key={item.id}>
@@ -53,4 +53,4 @@ class Todos extends React.Component {
     }
 }
 
-export default Todos;
+export default TodoList;

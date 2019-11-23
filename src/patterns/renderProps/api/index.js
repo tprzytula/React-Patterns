@@ -6,7 +6,7 @@ class Storage extends Component {
         items: []
     };
 
-    componentWillMount() {
+    componentDidMount() {
         this.synchronize();
     }
 
@@ -24,12 +24,20 @@ class Storage extends Component {
             .map(key => ({
                 id: key,
                 value: localStorage.getItem(key)
+            }))
+            .filter(({ value }) => {
+                const { type } = JSON.parse(value);
+                return type === 'class-components';
+            })
+            .map(({ id, value }) => ({
+                id,
+                value: JSON.parse(value).value
             }));
     };
 
     add = value => {
         const id = Date.now().toString();
-        localStorage.setItem(id, value);
+        localStorage.setItem(id, JSON.stringify({ value, type: 'class-components' }));
         this.synchronize();
     };
 

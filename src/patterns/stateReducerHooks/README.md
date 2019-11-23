@@ -1,16 +1,13 @@
 ### [⬅](https://github.com/tprzytula/react-patterns)
-# State Reducer (using hooks)
+# [State Reducer example](../stateReducer/README.md) recreated using hooks
 
 ### Introduction
-State Reducer allows the user to interfere with the internal state of a component.
-This enables deep customization.
+This is an example of how to manipulate internal state of a custom hook.
 
-The purpose of `<Repeater>` component is to copy a provided element x amount of times.
-It gives tools to increase and decrease the amount of copies.
+We will recreate the previous example written with class components to showcase the differences and similarities between two approaches.
 
-In this example it will be used to control the amount of stars in a review form.
-Review form in this use case requires to have at least 1 and no more than 6 stars.
-State Reducer pattern will be handy to fulfill this requirement.
+The `<Repeater>` component was replaced with the `useRepeater` hook.
+It still provides increase/decrease methods and the list of component copies.
 
 ### API
 
