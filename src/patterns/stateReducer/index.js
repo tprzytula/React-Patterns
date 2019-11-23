@@ -25,7 +25,7 @@ class Rating extends Component {
             >
                 {({ increase, decrease }) =>
                     <React.Fragment>
-                        <h1>How good was our service ?</h1>
+                        <h1>How good was our service?</h1>
                         <Icon
                             className="control minus"
                             onClick={decrease}

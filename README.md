@@ -14,6 +14,7 @@ Your app should start on ```localhost:3000``` where you can navigate through pat
 * **[Compound Components](./src/patterns/compoundComponents)**
 * **[Render Props](./src/patterns/renderProps)**
 * **[State Reducer](./src/patterns/stateReducer)**
+* **[State Reducer (using hooks)](./src/patterns/stateReducerHooks)**
 
 #### Files
 
