@@ -1,5 +1,5 @@
 ### [⬅](https://github.com/tprzytula/react-patterns)
-# [State Reducer example](../stateReducer/README.md) recreated using hooks
+# [State Reducer example](../classComponents/README.md) recreated using hooks
 
 ### Introduction
 This is an example of how to manipulate internal state of a custom hook.

@@ -5,10 +5,10 @@ import {
     Link
 } from 'react-router-dom'
 import CompoundComponents from './patterns/compoundComponents';
-import RenderProps from './patterns/renderProps';
-import RenderPropsHooks from './patterns/renderPropsHooks';
-import StateReducer from './patterns/stateReducer';
-import StateReducerHooks from './patterns/stateReducerHooks';
+import RenderProps from './patterns/renderProps/classComponents';
+import RenderPropsHooks from './patterns/renderProps/hooks';
+import StateReducer from './patterns/stateReducer/classComponents';
+import StateReducerHooks from './patterns/stateReducer/hooks';
 
 class App extends Component {
   render() {
@@ -16,11 +16,25 @@ class App extends Component {
       <Router>
           <div>
               <ul>
-                  <li><Link to="/compoundComponents">Compound components</Link></li>
-                  <li><Link to="/renderProps">Render props</Link></li>
-                  <li><Link to="/renderPropsHooks">Render props (recreated with hooks)</Link></li>
-                  <li><Link to="/stateReducer">State reducer</Link></li>
-                  <li><Link to="/stateReducerHooks">State reducer (recreated with hooks)</Link></li>
+                  <li>
+                      <Link to="/compoundComponents">Compound components</Link>
+                  </li>
+                  <li>
+                      <Link to="/renderProps">Render props</Link>
+                      <ul>
+                          <li>
+                              <Link to="/renderPropsHooks">example recreated using hooks</Link>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <Link to="/stateReducer">State reducer</Link>
+                      <ul>
+                          <li>
+                              <Link to="/stateReducerHooks">example recreated using hooks</Link>
+                          </li>
+                      </ul>
+                  </li>
               </ul>
 
               <hr/>

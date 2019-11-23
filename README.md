@@ -12,10 +12,10 @@ Your app should start on ```localhost:3000``` where you can navigate through pat
 #### Patterns
 
 * **[Compound Components](./src/patterns/compoundComponents)**
-* **[Render Props](./src/patterns/renderProps)**
-* **[Render Props (recreated using hooks)](./src/patterns/renderPropsHooks)**
-* **[State Reducer](./src/patterns/stateReducer)**
-* **[State Reducer (recreated using hooks)](./src/patterns/stateReducerHooks)**
+* **[Render Props](./src/patterns/renderProps/classComponents)**
+    * **[example recreated using hooks](./src/patterns/renderProps/hooks)**
+* **[State Reducer](./src/patterns/stateReducer/classComponents)**
+    * **[example recreated using hooks](./src/patterns/stateReducer/hooks)**
 
 #### Files
 

@@ -1,5 +1,5 @@
 ### [⬅](https://github.com/tprzytula/react-patterns)
-# [Render Props example](../renderProps/README.md) recreated using hooks
+# [Render Props example](../classComponents/README.md) recreated using hooks
 
 ### Introduction
 Using hooks we were able to recreate the render prop example in a much simpler and more intuitive manner.
