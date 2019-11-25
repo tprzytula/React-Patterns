@@ -13,7 +13,7 @@ class UserCV extends Component {
         <UserContext.Consumer>
             {({ bio }) =>
                 <div className='element details-container'>
-                    <Typography variant="headline" component="h1">
+                    <Typography component="h1">
                         Profile
                     </Typography>
                     <Typography color="textSecondary" className='bio-text'>
@@ -87,7 +87,7 @@ class UserCV extends Component {
             <UserContext.Consumer>
                 {({ skills }) =>
                     <div className='element details-container'>
-                        <Typography variant="headline" component="h1">
+                        <Typography component="h1">
                             Skills
                         </Typography>
                         {Object.keys(skills).map(key => renderCategory(skills, key))}

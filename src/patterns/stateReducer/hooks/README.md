@@ -4,7 +4,7 @@
 ### Introduction
 This is an example of how to manipulate internal state of a custom hook.
 
-We will recreate the previous example written with class components to showcase the differences and similarities between two approaches.
+We will recreate the previous example that was written using class components to showcase the differences and similarities between two approaches.
 
 The `<Repeater>` component was replaced with the `useRepeater` hook.
 It still provides increase/decrease methods and the list of component copies.

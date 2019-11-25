@@ -4,7 +4,8 @@ import {
     Route,
     Link
 } from 'react-router-dom'
-import CompoundComponents from './patterns/compoundComponents';
+import CompoundComponents from './patterns/compoundComponents/classComponents';
+import CompoundComponentsHooks from './patterns/compoundComponents/hooks';
 import RenderProps from './patterns/renderProps/classComponents';
 import RenderPropsHooks from './patterns/renderProps/hooks';
 import StateReducer from './patterns/stateReducer/classComponents';
@@ -18,6 +19,11 @@ class App extends Component {
               <ul>
                   <li>
                       <Link to="/compoundComponents">Compound components</Link>
+                      <ul>
+                          <li>
+                              <Link to="/compoundComponentsHooks">example recreated using hooks</Link>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                       <Link to="/renderProps">Render props</Link>
@@ -40,6 +46,7 @@ class App extends Component {
               <hr/>
 
               <Route exact path="/compoundComponents" component={CompoundComponents}/>
+              <Route exact path="/compoundComponentsHooks" component={CompoundComponentsHooks}/>
               <Route exact path="/renderProps" component={RenderProps}/>
               <Route exact path="/renderPropsHooks" component={RenderPropsHooks}/>
               <Route exact path="/stateReducer" component={StateReducer}/>
