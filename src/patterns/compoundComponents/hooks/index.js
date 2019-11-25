@@ -7,15 +7,10 @@ class UserProfile extends Component {
         return (
             <div style={{ width: '350px', margin: '0 auto'}}>
                 <UserCV user={profileData}>
-                    <div>
-                        <UserCV.Badge/>
-                    </div>
-                    <hr/>
-                    <UserCV.Profile/>
-                    <UserCV.Skills>
-                        <hr/>
-                    </UserCV.Skills>
                     <UserCV.Social/>
+                    <UserCV.Profile/>
+                    <UserCV.Skills/>
+                    <UserCV.Badge/>
                 </UserCV>
             </div>
         )
